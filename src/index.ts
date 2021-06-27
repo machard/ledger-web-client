@@ -17,7 +17,7 @@ class LedgerWebCLient {
   onMessage(data: any) {
     if (this.requests[data.id]) {
       if (data.err) {
-        this.requests[data.id].reject(data.res);
+        this.requests[data.id].reject(data.err);
       } else {
         this.requests[data.id].resolve(data.res);
       }
