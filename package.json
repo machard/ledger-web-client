@@ -1,6 +1,10 @@
 {
   "name": "ledger-web-client",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/machard/ledger-web-client"
+  },
   "scripts": {
     "test": "yarn jest --detectOpenHandles",
     "typecheck": "yarn tsc --project ./tsconfig-typecheck.json",
